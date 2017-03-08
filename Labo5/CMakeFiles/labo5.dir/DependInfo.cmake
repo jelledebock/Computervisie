@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/labo5.cpp" "/Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/cmake-build-debug/CMakeFiles/labo5.dir/labo5.cpp.o"
+  "/home/jelle/Documents/Masterjaar/Computervisie/Labo5/labo5.cpp" "/home/jelle/Documents/Masterjaar/Computervisie/Labo5/CMakeFiles/labo5.dir/labo5.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
