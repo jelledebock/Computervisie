@@ -1,1 +1,1 @@
-CMake: 3.6.3@/home/jelle/Applications/clion-2016.3.3/bin/cmake/bin/cmake
+CMake: 3.6.3@/Applications/CLion.app/Contents/bin/cmake/bin/cmake

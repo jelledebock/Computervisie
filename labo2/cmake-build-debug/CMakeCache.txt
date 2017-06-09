@@ -135,7 +135,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=opencv_example_project
+CMAKE_PROJECT_NAME:STATIC=labo2
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -193,10 +193,16 @@ OpenCV_DIR:PATH=/usr/local/share/OpenCV
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Value Computed by CMake
-opencv_example_project_BINARY_DIR:STATIC=/Users/JelleDeBock/Documents/master/ComputerVisie/labo2/cmake-build-debug
+labo2_BINARY_DIR:STATIC=/Users/JelleDeBock/Documents/master/ComputerVisie/labo2/cmake-build-debug
 
 //Value Computed by CMake
-opencv_example_project_SOURCE_DIR:STATIC=/Users/JelleDeBock/Documents/master/ComputerVisie/labo2
+labo2_SOURCE_DIR:STATIC=/Users/JelleDeBock/Documents/master/ComputerVisie/labo2
+
+//Value Computed by CMake
+labo_BINARY_DIR:STATIC=/Users/JelleDeBock/Documents/master/ComputerVisie/labo2/cmake-build-debug
+
+//Value Computed by CMake
+labo_SOURCE_DIR:STATIC=/Users/JelleDeBock/Documents/master/ComputerVisie/labo2
 
 
 ########################

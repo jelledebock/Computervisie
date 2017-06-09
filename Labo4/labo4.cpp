@@ -39,6 +39,7 @@ void maak_proportioneel(void *pVoid) {
     warpPerspective(*((Mat*)pVoid),proportie,lambda, ((Mat*)pVoid)->size() );
 
     imshow("Vierkant",proportie);
+    imwrite("labo4_9.png",proportie);
     waitKey();
 }
 
@@ -58,6 +59,7 @@ void opgave8(char * filename){
     warpAffine(src,dst,filter,Size(src.cols,src.rows));
 
     imshow("WarpAffine",dst);
+    imwrite("labo4_8.png",dst);
     waitKey();
 }
 
@@ -85,6 +87,7 @@ void opgave9(char * filename){
 }
 
 int main(int argc, char **argv) {
-    opgave9(argv[1]);
+    opgave8("shadow.png");
+    opgave9("shadow_box.png");
     return 0;
 }

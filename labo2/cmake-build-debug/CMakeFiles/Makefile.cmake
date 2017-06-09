@@ -21,7 +21,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompiler.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerABI.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineCompilerId.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeFindBinUtils.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeFindCodeBlocks.cmake"
@@ -29,13 +28,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeParseArguments.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeParseImplicitLinkInfo.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeSystem.cmake.in"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeTestCCompiler.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeTestCXXCompiler.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeTestCompilerCommon.cmake"
-  "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/CMakeUnixFindMake.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/Compiler/AppleClang-C-FeatureTests.cmake"
@@ -115,7 +112,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.6.3/CMakeSystem.cmake"
   "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeCCompiler.cmake"

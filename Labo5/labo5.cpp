@@ -12,36 +12,44 @@ void opgave10(string filename){
     src = imread(filename);
     imshow("Origineel", src);
 
-    Mat kernel = getGaussianKernel(15,4,CV_64F);
+    //Een mooi resultaat is ksize1 = 23 en ksize2 = 30
+    Mat kernel = getGaussianKernel(23,-1,CV_64F);
     cout<<kernel<<endl;
     Mat vierkant(kernel.rows,kernel.rows,CV_8UC1);
     kernel.col(0).copyTo(vierkant.col(vierkant.rows/2));
 
-    Mat kernel2 = getGaussianKernel(src.rows,3,CV_64F);
-    kernel2.t();
+    double ksize = 1;
+    while(ksize<100){
+        cout<<"Kernel size = "<<ksize<<endl;
+        Mat kernel2 = getGaussianKernel(ksize,-1,CV_64F);
+        kernel2.t();
 
-    Mat gefilterd_vierkant;
-    filter2D(vierkant, gefilterd_vierkant, -1, kernel2 );
+        Mat gefilterd_vierkant;
+        filter2D(vierkant, gefilterd_vierkant, -1, kernel2 );
 
-    Mat dog;
-    Sobel(gefilterd_vierkant, dog, CV_32F, 1, 0);
+        Mat dog;
+        Sobel(gefilterd_vierkant, dog, CV_32F, 1, 0);
 
-    Mat rotatie_matrix;
-    rotatie_matrix = getRotationMatrix2D(Point(0,0),75,1);
+        Mat rotatie_matrix;
+        rotatie_matrix = getRotationMatrix2D(Point(0,0),75,1);
 
-    Mat warped;
-    warpAffine(dog, warped, rotatie_matrix, dog.size());
+        Mat warped;
+        warpAffine(dog, warped, rotatie_matrix, dog.size());
 
-    Mat grey;
-    cvtColor(src, grey, CV_RGB2GRAY);
+        Mat grey;
+        cvtColor(src, grey, CV_RGB2GRAY);
 
-    Mat grey_filtered;
-    filter2D(grey, grey_filtered, -1, warped );
+        Mat grey_filtered;
+        filter2D(grey, grey_filtered, -1, warped );
 
-    Mat abs_grey = abs(grey_filtered);
+        Mat abs_grey = abs(grey_filtered);
 
-    imshow("Filtered",abs_grey);
-    waitKey();
+        imshow("Filtered",abs_grey);
+        imwrite("labo5_10.png",abs_grey);
+        waitKey();
+        ksize+=0.5;
+
+    }
 
 }
 
@@ -67,6 +75,7 @@ void opgave11(string filename){
         line( src, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
     }
     imshow("Edges",src);
+    imwrite("labo5_11.png",src);
     waitKey();
 }
 
@@ -102,6 +111,7 @@ void opgave12(string filename){
     }
 
     imshow( "corners", src );
+    imwrite("labo5_12.png",src);
     waitKey(0);
 }
 
@@ -135,6 +145,7 @@ void opgave13(string filename1, string filename2){
     drawMatches(src1, kp1, src2, kp2, matches, res, Scalar::all(-1), Scalar::all(-1),
                 vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     imshow("Resultaat", res);
+    imwrite("labo5_13.png",res);
     waitKey();
 }
 

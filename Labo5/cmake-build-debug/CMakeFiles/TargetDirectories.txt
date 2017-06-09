@@ -1,3 +1,0 @@
-/home/jelle/Documents/Masterjaar/Computervisie/Labo5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/jelle/Documents/Masterjaar/Computervisie/Labo5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jelle/Documents/Masterjaar/Computervisie/Labo5/cmake-build-debug/CMakeFiles/labo5.dir

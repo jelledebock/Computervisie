@@ -15,6 +15,7 @@ void opgave2(string filename){
     namedWindow( windowname1, WINDOW_AUTOSIZE );
     imshow("Voor", src);
 
+
     for(int i=1; i<51; i=i+2) {
         cout<<"Blur i="<<i<<endl;
         GaussianBlur(src, dst, Size(i,i), 0);
@@ -25,6 +26,10 @@ void opgave2(string filename){
 
         waitKey();
     }
+
+    Mat img;
+    GaussianBlur(src, img, Size(11,11),0);
+    imwrite("labo2_2.png",img);
     cout<<"Opgave2 done"<<endl<<endl;
 
 }
@@ -47,6 +52,7 @@ void opgave3(string filename){
 
     namedWindow( "resultaat" , WINDOW_AUTOSIZE );
     imshow("resultaat",dst);
+    imwrite("labo2_3.png",dst);
     waitKey();
 
     cout<<"Opgave3 done"<<endl<<endl;
@@ -63,6 +69,7 @@ void opgave4(string filename){
     medianBlur(src,dst,3);
 
     namedWindow( "Salt and pepper removed" , WINDOW_AUTOSIZE );
+    imwrite("labo2_4.png",dst);
     imshow("Salt and pepper removed",dst);
     waitKey();
 
@@ -84,6 +91,7 @@ void opgave5(string filename){
 
     namedWindow( "Sobel filter" , WINDOW_AUTOSIZE );
     imshow("Sobel filter",abs_x);
+    imwrite("labo2_5.png",abs_x);
 
     waitKey();
 
@@ -121,7 +129,7 @@ void opgave6(string filename){
 
     namedWindow( "filter2D" , WINDOW_AUTOSIZE );
     imshow("filter2D",filtered);
-
+    imwrite("labo2_6.png",filtered);
     waitKey();
 
     cout<<"Opgave6 done"<<endl<<endl;
@@ -132,14 +140,14 @@ int main(int argc, char ** argv) {
     //string filename2 = "whitenoise.png";
     //opgave2(filename2);
 
-    //string filename3 = "unsharp.png";
-    //opgave3(filename3);
+    string filename3 = "unsharp.png";
+    opgave3(filename3);
 
-    //string filename4 = "saltandpeppernoise.png";
-    //opgave4(filename4);
+    string filename4 = "saltandpeppernoise.png";
+    opgave4(filename4);
 
-    //string filename5 = "building.png";
-    //opgave5(filename5);
+    string filename5 = "building.png";
+    opgave5(filename5);
 
     string filename6 = "blots.png";
     opgave6(filename6);

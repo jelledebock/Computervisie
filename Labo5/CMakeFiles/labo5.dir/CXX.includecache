@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jelle/Documents/Masterjaar/Computervisie/Labo5/labo5.cpp
+/Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/labo5.cpp
 opencv2/highgui/highgui.hpp
 -
 opencv2/imgproc/imgproc.hpp
-/home/jelle/Documents/Masterjaar/Computervisie/Labo5/opencv2/imgproc/imgproc.hpp
+/Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/opencv2/imgproc/imgproc.hpp
 opencv2/opencv.hpp
 -
 iostream

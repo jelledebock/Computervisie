@@ -27,6 +27,7 @@ void opgave7(char * filename){
 
     dilate(erosie_stap, dilate_stap1, dilatie);
     imshow("Na dilate stap" ,dilate_stap1);
+    imwrite("labo3.png",dilate_stap1);
 
     waitKey();
 }

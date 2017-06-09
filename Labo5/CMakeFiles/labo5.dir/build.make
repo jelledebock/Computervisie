@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jelle/Applications/clion-2016.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/jelle/Applications/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jelle/Documents/Masterjaar/Computervisie/Labo5
+CMAKE_SOURCE_DIR = /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jelle/Documents/Masterjaar/Computervisie/Labo5
+CMAKE_BINARY_DIR = /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5
 
 # Include any dependencies generated for this target.
 include CMakeFiles/labo5.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/labo5.dir/flags.make
 
 CMakeFiles/labo5.dir/labo5.cpp.o: CMakeFiles/labo5.dir/flags.make
 CMakeFiles/labo5.dir/labo5.cpp.o: labo5.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jelle/Documents/Masterjaar/Computervisie/Labo5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/labo5.dir/labo5.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/labo5.dir/labo5.cpp.o -c /home/jelle/Documents/Masterjaar/Computervisie/Labo5/labo5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/labo5.dir/labo5.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/labo5.dir/labo5.cpp.o -c /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/labo5.cpp
 
 CMakeFiles/labo5.dir/labo5.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo5.dir/labo5.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jelle/Documents/Masterjaar/Computervisie/Labo5/labo5.cpp > CMakeFiles/labo5.dir/labo5.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/labo5.cpp > CMakeFiles/labo5.dir/labo5.cpp.i
 
 CMakeFiles/labo5.dir/labo5.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo5.dir/labo5.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jelle/Documents/Masterjaar/Computervisie/Labo5/labo5.cpp -o CMakeFiles/labo5.dir/labo5.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/labo5.cpp -o CMakeFiles/labo5.dir/labo5.cpp.s
 
 CMakeFiles/labo5.dir/labo5.cpp.o.requires:
 
@@ -90,24 +90,44 @@ labo5_EXTERNAL_OBJECTS =
 
 labo5: CMakeFiles/labo5.dir/labo5.cpp.o
 labo5: CMakeFiles/labo5.dir/build.make
-labo5: /usr/local/lib/libopencv_shape.so.3.2.0
-labo5: /usr/local/lib/libopencv_stitching.so.3.2.0
-labo5: /usr/local/lib/libopencv_superres.so.3.2.0
-labo5: /usr/local/lib/libopencv_videostab.so.3.2.0
-labo5: /usr/local/lib/libopencv_objdetect.so.3.2.0
-labo5: /usr/local/lib/libopencv_calib3d.so.3.2.0
-labo5: /usr/local/lib/libopencv_features2d.so.3.2.0
-labo5: /usr/local/lib/libopencv_flann.so.3.2.0
-labo5: /usr/local/lib/libopencv_highgui.so.3.2.0
-labo5: /usr/local/lib/libopencv_ml.so.3.2.0
-labo5: /usr/local/lib/libopencv_photo.so.3.2.0
-labo5: /usr/local/lib/libopencv_video.so.3.2.0
-labo5: /usr/local/lib/libopencv_videoio.so.3.2.0
-labo5: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
-labo5: /usr/local/lib/libopencv_imgproc.so.3.2.0
-labo5: /usr/local/lib/libopencv_core.so.3.2.0
+labo5: /usr/local/lib/libopencv_calib3d.a
+labo5: /usr/local/lib/libopencv_core.a
+labo5: /usr/local/lib/libopencv_features2d.a
+labo5: /usr/local/lib/libopencv_flann.a
+labo5: /usr/local/lib/libopencv_highgui.a
+labo5: /usr/local/lib/libopencv_imgcodecs.a
+labo5: /usr/local/lib/libopencv_imgproc.a
+labo5: /usr/local/lib/libopencv_ml.a
+labo5: /usr/local/lib/libopencv_objdetect.a
+labo5: /usr/local/lib/libopencv_photo.a
+labo5: /usr/local/lib/libopencv_shape.a
+labo5: /usr/local/lib/libopencv_stitching.a
+labo5: /usr/local/lib/libopencv_superres.a
+labo5: /usr/local/lib/libopencv_video.a
+labo5: /usr/local/lib/libopencv_videoio.a
+labo5: /usr/local/lib/libopencv_videostab.a
+labo5: /usr/local/lib/libopencv_objdetect.a
+labo5: /usr/local/lib/libopencv_calib3d.a
+labo5: /usr/local/lib/libopencv_features2d.a
+labo5: /usr/local/lib/libopencv_flann.a
+labo5: /usr/local/lib/libopencv_highgui.a
+labo5: /usr/local/lib/libopencv_ml.a
+labo5: /usr/local/lib/libopencv_photo.a
+labo5: /usr/local/lib/libopencv_video.a
+labo5: /usr/local/lib/libopencv_videoio.a
+labo5: /usr/local/lib/libopencv_imgcodecs.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/liblibjpeg.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/liblibwebp.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/liblibpng.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/liblibtiff.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/liblibjasper.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/libIlmImf.a
+labo5: /usr/local/lib/libopencv_imgproc.a
+labo5: /usr/local/lib/libopencv_core.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/libzlib.a
+labo5: /usr/local/share/OpenCV/3rdparty/lib/libippicv.a
 labo5: CMakeFiles/labo5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jelle/Documents/Masterjaar/Computervisie/Labo5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable labo5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable labo5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/labo5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +144,6 @@ CMakeFiles/labo5.dir/clean:
 .PHONY : CMakeFiles/labo5.dir/clean
 
 CMakeFiles/labo5.dir/depend:
-	cd /home/jelle/Documents/Masterjaar/Computervisie/Labo5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jelle/Documents/Masterjaar/Computervisie/Labo5 /home/jelle/Documents/Masterjaar/Computervisie/Labo5 /home/jelle/Documents/Masterjaar/Computervisie/Labo5 /home/jelle/Documents/Masterjaar/Computervisie/Labo5 /home/jelle/Documents/Masterjaar/Computervisie/Labo5/CMakeFiles/labo5.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5 /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5 /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5 /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5 /Users/JelleDeBock/Documents/master/ComputerVisie/Labo5/CMakeFiles/labo5.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/labo5.dir/depend
 
